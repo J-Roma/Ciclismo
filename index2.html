@@ -12,14 +12,13 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <title>Estadisticas | Ciclismo</title>
 </head>
-
 <body>
     <section class="container-fluid">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
                 <div class="container-sm">
                     <a class="navbar-brand" href="#">
-                        <img class="img-fluid" src="/imagenes/bicicleta-logo.png" alt="" width="30" height="24">
+                        <img class="img-fluid" src="./imagenes/bicicleta-logo.png" alt="" width="30" height="24">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -80,20 +79,20 @@
                     <div class="tab-pane active" id="res" role="tabpanel" aria-labelledby="res-tab">
                         <div>
                             <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <input id="buscar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Search</button>
                             </form>
                             <div class="table-responsive">
-                                <table class="table">
+                                <table id="tbl-ciclista" class="table">
                                     <thead>
                                         <th>#</th>
-                                        <th>Corredor</th>
-                                        <th>Carrera 1</th>
-                                        <th>Carrera 2</th>
-                                        <th>Carrera 3</th>
-                                        <th>Carrera 4</th>
-                                        <th>Carrera 5</th>
-                                        <th>Acciones</th>
+                                        <th id="corredor_nombre">Corredor</th>
+                                        <th id="carrera_1_corredor">Carrera 1</th>
+                                        <th id="carrera_2_corredor">Carrera 2</th>
+                                        <th id="carrera_3_corredor">Carrera 3</th>
+                                        <th id="carrera_4_corredor">Carrera 4</th>
+                                        <th id="carrera_5_corredor">Carrera 5</th>
+                                        <th id="acciones">Acciones</th>
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -112,8 +111,51 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="prom" role="tabpanel" aria-labelledby="prom-tab">hola</div>
-                    <div class="tab-pane" id="time" role="tabpanel" aria-labelledby="time-tab">...</div>
+                    <div class="tab-pane" id="prom" role="tabpanel" aria-labelledby="prom-tab">
+                        <form class="d-flex">
+                            <input id="buscar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <table id="tbl-ciclista-prom" class="table">
+                            <thead>
+                                <th>#</th>
+                                <th>Corredor</th>
+                                <th>Carrera 1</th>               
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>-</td>
+                                    <td>-</td>
+
+                                </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="time" role="tabpanel" aria-labelledby="time-tab">
+                        <form class="d-flex">
+                            <input id="buscar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <table id="tbl-ciclista-mejores tiempos" class="table">
+                            <thead>
+                                <th>#</th>
+                                <th>Corredor</th>
+                                <th>Promedio</th>               
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>-</td>
+                                    <td>-</td>
+
+                                </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                            
+                    </div>
                 </div>
             </div>
         </div>
